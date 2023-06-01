@@ -1,1 +1,1 @@
-# snekflat.github.io
+snekflat.github.io
