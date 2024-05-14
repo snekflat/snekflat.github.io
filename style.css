@@ -55,7 +55,7 @@ p {
 
 .game-release{
 	font-family: 'Shippori Antique B1', sans-serif;
-	font-size: 10px;
+	font-size: 16px;
 	color: rgba(150,150,150,255);
 	padding-bottom: 12px;
 }
@@ -63,10 +63,11 @@ p {
 
 .game-description{
 	font-family: 'Shippori Antique B1', sans-serif;
-	font-size: 12px;
-	width: 600px;
+	font-size: 14px;
+	width: 648px;
 	color: rgba(190,190,195,255);
 	padding-bottom: 12px;
+	text-align: center;
 }
 
 .game_box {
