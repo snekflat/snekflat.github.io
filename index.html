@@ -58,10 +58,10 @@
 	<center>
 	
 <div class = "game-title"> Tiny Terry's Turbo Trip</div>
-<div class = "game-release">Release date: 30/05/2024
-<div id="tttt_countdown"></div></div>
-<iframe width="640" height="360"src="https://www.youtube.com/embed/HS9W_mMOY2Q"></iframe>
+<div class = "game-release">2024</br></br>
+<iframe width="640" height="360"src="https://www.youtube.com/embed/THZd3iR770s"></iframe>
 <div class = "game-description"> Step into Terry's flip-flops as you freely explore the absurd tiny open world of ✨Sprankelwater✨. An anarchist city filled with hilarious characters and wholesome discoveries.</div>
+Available on:
 <a href="https://store.steampowered.com/app/2238040/Tiny_Terrys_Turbo_Trip">Steam <img src = "gfx/icon_steam64.png" width="16px"></a></BR></BR>
 Writing an article? ❤️ Here's a <a href="tttt_presskit/press.html">press kit</a>.
 </BR>
@@ -95,49 +95,6 @@ Available on: </BR><a href="https://www.nintendo.com/games/wuppo-definitive-edit
 
 
 	</div>
-
-
-
-<p id="tttt_countdown"></p>
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("May 30, 2024 18:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  var text = "";
-  if (days > 1) text += days + " days, ";
-  text += ""+ hours + " hours, "
-  + minutes + " minutes and " + seconds + " seconds";
-  if (distance < 0) {
-  text = "Can release any time now! 🦀🦀🦀🦀🦀🦀🦀🦀🦀";
-  }
-  else {
-  text += " left! 🦀🦀🦀";
-  }
-  document.getElementById("tttt_countdown").innerHTML = text;
-  
-    
-  // If the count down is over, write some text 
-  if (days < -1) {
-    clearInterval(x);
-    document.getElementById("tttt_countdown").innerHTML = "";
-  }
-}, 1000);
-</script>
 
 </body>
 
