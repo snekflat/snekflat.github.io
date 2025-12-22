@@ -48,7 +48,12 @@ p {
 }
 
 .black_container {
-	background-color: #0d1211;
+	background-image: linear-gradient(
+	to bottom, 
+	#0d1211 0%, 
+	#0d1211 97%,
+	black 100%);
+	
 	margin-top: -80px;
 	background-origin: content-box;
 	background-clip: content-box;
