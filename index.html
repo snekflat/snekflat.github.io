@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
-
-<head>
+	<head>
 		<title>snekflat</title>
 		
 		 <style>
@@ -25,7 +24,7 @@
 		</style>
 		
 		<meta name="description" content="Creator of: Wuppo & TTTT & More!">
-		<meta name="keywords" content="TTTT, Wuppo, Knuist, Perzik, Lars Korendijk, Knuistperzik, Knuist en Perzik, Knuist and Perzik, Knuist & Perzik, wuppogame, game, Dutch, Tiny Terry's Turbo Trip, Thomas de Waard, twlkd, greencream, snekflat, TTTT">
+		<meta name="keywords" content="TTTT, Wuppo, MLD, Knuist, Perzik, Lars Korendijk, Knuistperzik, Knuist en Perzik, Knuist and Perzik, Knuist & Perzik, wuppogame, game, Dutch, Tiny Terry's Turbo Trip, Thomas de Waard, twlkd, greencream, snekflat, TTTT">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		
 		<link rel=icon href="gfx/favicon.ico">
@@ -35,279 +34,261 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" rel="stylesheet">
 	</head>
+	
+	
 <body>
-<div class="white_container">
-  <div id="lang-switch">
-    <button class="lang-btn" onclick="switchLang('en')">ENG</button>
-    <button class="lang-btn" onclick="switchLang('zh')">中文</button>
-  </div>
-
-
-	
-
-	
-	
-	
-	</BR>
-	<img src="gfx/logo.png">
-	
-		<p data-i18n="intro"></p> <!-- i like making games<br>with bizarre worlds & busy characters. -->
-		</br></br>
-		
+	<div class="white_container">
+		<!-- LANGUAGE BUTTONS -->
+		<div id="lang-switch">
+			</BR>
+			<button class="lang-btn" onclick="switchLang('en')">ENG</button>
+			<button class="lang-btn" onclick="switchLang('zh')">中文</button>
+		</div>	
+		</BR>
+		<!-- LOGO -->
+		<img src="gfx/logo.png">
+		<!-- INTRO -->
+		<p data-i18n="intro"></p>
+		</br>
+		<!-- LINKS -->
 		<a href="https://store.steampowered.com/dev/snekflat"><img src = "gfx/icon_steam_dark.png" width="32px" alt="Steam"></a>
 		<a href="https://discord.gg/DAbKavXHVG"><img src = "gfx/icon_discord.png" width="32px" alt="Discord"></a>
-		<a href="https://twitter.com/snekflat"><img src = "gfx/icon_bird.png" width="32px" alt="Twitter"></a>
-		<a href="https://www.youtube.com/twlkd"><img src = "gfx/icon_youtube.png" width="32px" alt = "YouTube"></a>
+		<a href="https://twitter.com/snekflat"><img src = "gfx/icon_x.png" width="32px" alt="Twitter"></a>
+		<a href="https://www.youtube.com/@snekflat/"><img src = "gfx/icon_youtube.png" width="32px" alt = "YouTube"></a>
+	</div>
+	<div class = "noBorder">
+	<!-- Wave transition -->
+	<svg width="100%" height="158" viewBox="10 52 1280 150" preserveAspectRatio="none" style="display:block">
+	  <defs>
+		<filter id="waveNoise">
+		  <feTurbulence
+			type="fractalNoise"
+			baseFrequency="0.01"
+			numOctaves="1"
+			seed="3"
+		  />
+		  <feDisplacementMap
+			in="SourceGraphic"
+			scale="48"
+		  />
+		</filter>
+	  </defs>
+	  <path
+		d="
+		  M0 75
+		  C 120 35, 240 115, 360 75
+		  C 480 35, 600 115, 720 75
+		  C 840 35, 960 115, 1080 75
+		  C 1200 35, 1320 115, 1440 75
+		  L1440 200
+		  L0 200
+		  Z
+		"
+		fill="#000"
+		filter="url(#waveNoise)"
+	  />
+	</svg>
+	</div>
+	<!-- GAMES -->
+	<div class = "black_container">
+		<div class = "frame">
+			<center>
+			<h2 data-i18n="games"></h2>
+			</center>
+			<!-- Games: TTTT -->
+			<div class="game-title" data-i18n="game_tttt"></div>
+			<div class = "game-release">
+				2024
+				</br></br>
+				<iframe width="640" height="360"src="https://www.youtube.com/embed/THZd3iR770s"></iframe>
+				<div class = "game-description" 
+					data-i18n="game_tttt_description">
+				</div>
+				<div class = "game-links">
+					<span data-i18n="available"></span>
+					<a href="https://store.steampowered.com/app/2238040/Tiny_Terrys_Turbo_Trip">Steam <img src = "gfx/icon_steam64.png" width="16px"></a>
+					, <a href="https://store.epicgames.com/en-US/p/tiny-terrys-turbo-trip-2d23c7">Epic Game Store</a>
+					, <a href="https://store.playstation.com/nl-nl/product/EP6930-PPSA26877_00-0669157732693553">Playstation 5</a>
+					, <a href="https://www.nintendo.com/us/store/products/tiny-terrys-turbo-trip-switch/">Nintendo Switch <img src = "gfx/icon_switch64.png" width="16px"></a>
+					</BR><a href="tttt_presskit/press.html">Press Kit (Tiny Terry's Turbo Trip)</a>.
+				</div>
+			</div>
+			
+		</BR></BR>
 		
-	
+		<!-- Games: Wuppo -->
+		<div class="game-title" data-i18n="game_wuppo"></div>
+		<div class = "game-release">
+			2016, Definitive Edition: 2019
+			</br></br>
+			<iframe width="640" height="360" src="https://www.youtube.com/embed/hhH6dc3xeDA"></iframe>
+			<div class = "game-description" data-i18n="game_wuppo_description"></div>
+			<div class = "game-links">
+				<span data-i18n="available"></span>
+				<a href="http://store.steampowered.com/app/400630/">Steam <img src = "gfx/icon_steam64.png" width="16px"></a>, 
+				<a href="https://www.nintendo.com/games/wuppo-definitive-edition-switch/">Nintendo Switch <img src = "gfx/icon_switch64.png" width="16px"></a>, 
+				<a href="https://www.gog.com/game/wuppo">GOG</a>, 
+				<a href="https://www.microsoft.com/en-us/store/p/wuppo/brbpw76hgkhb">Xbox One</a>, 
+				<a href="https://store.playstation.com/nl-nl/product/EP4541-CUSA08533_00-WUPPOEU000000000?emcid=pa-st-111284">Playstation 4</a>
+				</BR><a href="https://www.indiedb.com/games/wuppo/presskit">Press Kit (Wuppo)</a>
+			</div>
+		</div>
 	</div>
 
-<div class = "noBorder">
-<!-- Wave transition -->
-<svg
-  width="100%"
-  height="158"
-  viewBox="10 52 1280 150"
-  preserveAspectRatio="none"
-  style="display:block"
->
-  <defs>
-    <filter id="waveNoise">
-      <feTurbulence
-        type="fractalNoise"
-        baseFrequency="0.01"
-        numOctaves="1"
-        seed="3"
-      />
-      <feDisplacementMap
-        in="SourceGraphic"
-        scale="48"
-      />
-    </filter>
-  </defs>
-  <path
-    d="
-      M0 75
-      C 120 35, 240 115, 360 75
-      C 480 35, 600 115, 720 75
-      C 840 35, 960 115, 1080 75
-      C 1200 35, 1320 115, 1440 75
-      L1440 200
-      L0 200
-      Z
-    "
-    fill="#000"
-    filter="url(#waveNoise)"
-  />
-</svg>
-</div>
-<div class = "black_container">
-<div class = "frame">
-<center>
-<h2 data-i18n="games"></h2>
-</center>
-<div class="game-title" data-i18n="game_tttt"></div>
-<div class = "game-release">2024</br></br>
-<iframe width="640" height="360"src="https://www.youtube.com/embed/THZd3iR770s"></iframe>
-<div class = "game-description" data-i18n="game_tttt_description"></div>
-<div class = "game-links">
-<span data-i18n="available"></span>
-<a href="https://store.steampowered.com/app/2238040/Tiny_Terrys_Turbo_Trip">Steam <img src = "gfx/icon_steam64.png" width="16px"></a>
-, <a href="https://store.epicgames.com/en-US/p/tiny-terrys-turbo-trip-2d23c7">Epic Game Store</a>
-, <a href="https://store.playstation.com/nl-nl/product/EP6930-PPSA26877_00-0669157732693553">Playstation 5</a>
-, <a href="https://www.nintendo.com/us/store/products/tiny-terrys-turbo-trip-switch/">Nintendo Switch <img src = "gfx/icon_switch64.png" width="16px"></a>
-</BR><a href="tttt_presskit/press.html">Press Kit (Tiny Terry's Turbo Trip)</a>.
-</div>
-</BR>
-</BR>
-
-
-
-<div class="game-title" data-i18n="game_wuppo"></div>
-<div class = "game-release">2016, Definitive Edition: 2019</div>
-<iframe width="640" height="360" src="https://www.youtube.com/embed/hhH6dc3xeDA"></iframe>
-<div class = "game-description" data-i18n="game_wuppo_description"></div>
-<div class = "game-links">
-<span data-i18n="available"></span>
-<a href="http://store.steampowered.com/app/400630/">Steam <img src = "gfx/icon_steam64.png" width="16px"></a>, 
-<a href="https://www.nintendo.com/games/wuppo-definitive-edition-switch/">Nintendo Switch <img src = "gfx/icon_switch64.png" width="16px"></a>, 
-<a href="https://www.gog.com/game/wuppo">GOG</a>, 
-<a href="https://www.microsoft.com/en-us/store/p/wuppo/brbpw76hgkhb">Xbox One</a>, 
-<a href="https://store.playstation.com/nl-nl/product/EP4541-CUSA08533_00-WUPPOEU000000000?emcid=pa-st-111284">Playstation 4</a>
-</BR><a href="https://www.indiedb.com/games/wuppo/presskit">Press Kit (Wuppo)</a>
-</div>
-</div>
-
+<!-- Recognition bla -->
 	</BR></BR></BR>
-	
 	<div class="recognition">
 	<img src="gfx/recognition.png">
 	<span data-i18n="recognition"></span></BR>
 	</div>
-	
-
-	
 	</BR>
 	<hr/>
 	<div class = "footer">
-© 2025 snekflat
-</div>
-</BR></BR>
-</div>
+	© 2025 snekflat
+	</div>
+	</BR></BR>
+	</div>
+
+
+
+	<!-- Content -->
+	<script>
+	const TEXT = {
+	  en: {
+		intro: "i like making games<br>with bizarre worlds & busy characters.",
+		games: "My Games",
+		available: "Available on: ",
+		game_tttt: "Tiny Terry's Turbo Trip",
+		game_tttt_description: "Step into Terry's flip-flops as you freely explore the absurd tiny open world of ✨Sprankelwater✨. An anarchist city filled with hilarious characters and wholesome discoveries.",
+		game_tttt_video: '<iframe width="640" height="360"src="https://www.youtube.com/embed/THZd3iR770s"></iframe>',
+		game_wuppo: "Wuppo",
+		game_wuppo_description: "Play as an exiled 'wum' looking for a new home in this bizarre but charming world, filled with strange creatures, puzzles, monsters and political chaos.",
+		game_wuppo_video: '<iframe width="640" height="360"src="https://www.youtube.com/embed/hhH6dc3xeDA"></iframe>',
+		
+		recognition: `
+	<h2>Recognition:</h2>
+
+	<h3>Tiny Terry's Turbo Trip:</h3>
+	<strong>Finalist:</strong>
+	<ul>
+	  <li>Best Game - Dutch Game Awards 2024</li>
+	  <li>Best Game Design - Dutch Game Awards 2024</li>
+	  <li>Best Art - Dutch Game Awards 2024</li>
+	  <li>Grand Prix - BIC Festival 2024</li>
+	  <li>Jury Prize - BIC Festival 2024</li>
+	</ul>
+
+	<strong>Official Selection:</strong>
+	<ul>
+	  <li>London Games Festival 2024</li>
+	  <li>Guerrilla Collective 2024</li>
+	  <li>Cozy Quest 2025</li>
+	</ul>
+
+	<h3>Wuppo:</h3>
+	<strong>Finalist:</strong>
+	<ul>
+	  <li>Best Game - BIG Festival 2017</li>
+	  <li>Best Narrative - BIG Festival 2017</li>
+	  <li>Grand Prix - BIC Fest 2017</li>
+	  <li>Best Game Design - BIC Fest 2017</li>
+	  <li>Best Art - BIC Fest 2017</li>
+	  <li>Best Audio - BIC Fest 2017</li>
+	  <li>Best Game Design - Dutch Game Awards 2017</li>
+	  <li>Gamekings Award (Audience Choice) - Dutch Game Awards 2017</li>
+	</ul>
+
+	<strong>Official Selection:</strong>
+	<ul>
+	  <li>Respawn 2017</li>
+	  <li>Holland Pavilion Tokyo Game Show 2015</li>
+	</ul>
+
+
+	`
+
+	  },
+
+	  zh: {
+		intro: "我喜欢做游戏<br>一个个怪怪的世界，<br>里面都是忙忙的角色。",
+		games: "我的游戏",
+		available: "可在以下平台购买: ",
+		game_tttt: "瞎闹猎车手",
+		game_tttt_video: '<iframe width="640" height="360"src="https://www.youtube.com/embed/THZd3iR770s"></iframe>',
+		game_tttt_description: "特里想开着他的新车飞上太空，干这种胆大不要命的事情，他肯定会成为大家议论的焦点。尽情地开车、跑啊、滑啊，在这段不长的旅途上发现各种东西，跟着特里努力实现他的目标。",
+		game_wuppo: "Wuppo",
+		game_wuppo_description: "你是一名被驱逐的“乌姆”，想在这个奇异迷人的世界中寻找一个新的家园。一路上，你会遇到奇怪的生物、谜题、怪物、与政治混乱...",
+		game_wuppo_video: '<iframe width="640" height="360"src="https://www.youtube.com/embed/hhH6dc3xeDA"></iframe>',
+		recognition: `
+	<h2>荣誉：</h2>
+
+	<h3>瞎闹猎车手:</h3>
+	<strong>入围奖项：</strong>
+	<ul>
+	  <li>最佳游戏 - Dutch Game Awards 2024</li>
+	  <li>最佳游戏设计 - Dutch Game Awards 2024</li>
+	  <li>最佳美术 - Dutch Game Awards 2024</li>
+	  <li>大奖 - BIC Festival 2024</li>
+	  <li>评审团奖 - BIC Festival 2024</li>
+	</ul>
+
+	<strong>官方入选：</strong>
+	<ul>
+	  <li>London Games Festival 2024</li>
+	  <li>Guerrilla Collective 2024</li>
+	  <li>Cozy Quest 2025</li>
+	</ul>
+
+	<h3>Wuppo:</h3>
+	<strong>入围奖项：</strong>
+	<ul>
+	  <li>最佳游戏 - BIG Festival 2017</li>
+	  <li>最佳叙事 - BIG Festival 2017</li>
+	  <li>大奖 - BIC Fest 2017</li>
+	  <li>最佳游戏设计 - BIC Fest 2017</li>
+	  <li>最佳美术 - BIC Fest 2017</li>
+	  <li>最佳音效 - BIC Fest 2017</li>
+	  <li>最佳游戏设计 - Dutch Game Awards 2017</li>
+	  <li>Gamekings 奖（观众选择）- Dutch Game Awards 2017</li>
+	</ul>
+
+	<strong>官方入选：</strong>
+	<ul>
+	  <li>Respawn 2017</li>
+	  <li>Holland Pavilion Tokyo Game Show 2015</li>
+	</ul>
+	`
+
+	  }
+	};
+	</script>
 
 
 
 
 
 
+	<!-- language -->
+	<script>
+	let lang = (navigator.language || "en").startsWith("zh") ? "zh" : "en";
 
+	function updateText() {
+	  document.querySelectorAll("[data-i18n]").forEach(el => {
+		const key = el.dataset.i18n;
+		if (TEXT[lang][key]) {
+		  el.innerHTML = TEXT[lang][key];
+		}
+	  });
+	}
+	updateText();
+	</script>
 
-
-
-
-
-<!-- Content -->
-<script>
-const TEXT = {
-  en: {
-    title: "it is LARS",
-    intro: "i like making games<br>with bizarre worlds & busy characters.",
-	aka: "a.k.a.",
-    games: "My Games",
-	available: "Available on: ",
-	game_tttt: "Tiny Terry's Turbo Trip",
-    game_tttt_description: "Step into Terry's flip-flops as you freely explore the absurd tiny open world of ✨Sprankelwater✨. An anarchist city filled with hilarious characters and wholesome discoveries.",
-	game_tttt_video: '<iframe width="640" height="360"src="https://www.youtube.com/embed/THZd3iR770s"></iframe>',
-	game_wuppo: "Wuppo",
-	game_wuppo_description: "Play as an exiled 'wum' looking for a new home in this bizarre but charming world, filled with strange creatures, puzzles, monsters and political chaos.",
-	game_wuppo_video: '<iframe width="640" height="360"src="https://www.youtube.com/embed/hhH6dc3xeDA"></iframe>',
-	
-	recognition: `
-<h2>Recognition:</h2>
-
-<h3>Tiny Terry's Turbo Trip:</h3>
-<strong>Finalist:</strong>
-<ul>
-  <li>Best Game - Dutch Game Awards 2024</li>
-  <li>Best Game Design - Dutch Game Awards 2024</li>
-  <li>Best Art - Dutch Game Awards 2024</li>
-  <li>Grand Prix - BIC Festival 2024</li>
-  <li>Jury Prize - BIC Festival 2024</li>
-</ul>
-
-<strong>Official Selection:</strong>
-<ul>
-  <li>London Games Festival 2024</li>
-  <li>Guerrilla Collective 2024</li>
-  <li>Cozy Quest 2025</li>
-</ul>
-
-<h3>Wuppo:</h3>
-<strong>Finalist:</strong>
-<ul>
-  <li>Best Game - BIG Festival 2017</li>
-  <li>Best Narrative - BIG Festival 2017</li>
-  <li>Grand Prix - BIC Fest 2017</li>
-  <li>Best Game Design - BIC Fest 2017</li>
-  <li>Best Art - BIC Fest 2017</li>
-  <li>Best Audio - BIC Fest 2017</li>
-  <li>Best Game Design - Dutch Game Awards 2017</li>
-  <li>Gamekings Award (Audience Choice) - Dutch Game Awards 2017</li>
-</ul>
-
-<strong>Official Selection:</strong>
-<ul>
-  <li>Respawn 2017</li>
-  <li>Holland Pavilion Tokyo Game Show 2015</li>
-</ul>
-
-
-`
-
-  },
-
-  zh: {
-    title: "我是 LARS",
-    intro: "我喜欢制作游戏<br>充满奇异的世界和热闹的角色。",
-	aka: "又名",
-    games: "我的游戏",
-	available: "可在以下平台购买: ",
-	game_tttt: "瞎闹猎车手",
-	game_tttt_video: '<iframe width="640" height="360"src="https://www.youtube.com/embed/THZd3iR770s"></iframe>',
-    game_tttt_description: "特里想开着他的新车飞上太空，干这种胆大不要命的事情，他肯定会成为大家议论的焦点。尽情地开车、跑啊、滑啊，在这段不长的旅途上发现各种东西，跟着特里努力实现他的目标。",
-	game_wuppo: "Wuppo",
-	game_wuppo_description: "你是一名被驱逐的“乌姆”，想在这个奇异迷人的世界中寻找一个新的家园。一路上，你会遇到奇怪的生物、谜题、怪物、与政治混乱...",
-	game_wuppo_video: '<iframe width="640" height="360"src="https://www.youtube.com/embed/hhH6dc3xeDA"></iframe>',
-	recognition: `
-<h2>荣誉：</h2>
-
-<h3>瞎闹猎车手:</h3>
-<strong>入围奖项：</strong>
-<ul>
-  <li>最佳游戏 - Dutch Game Awards 2024</li>
-  <li>最佳游戏设计 - Dutch Game Awards 2024</li>
-  <li>最佳美术 - Dutch Game Awards 2024</li>
-  <li>大奖 - BIC Festival 2024</li>
-  <li>评审团奖 - BIC Festival 2024</li>
-</ul>
-
-<strong>官方入选：</strong>
-<ul>
-  <li>London Games Festival 2024</li>
-  <li>Guerrilla Collective 2024</li>
-  <li>Cozy Quest 2025</li>
-</ul>
-
-<h3>Wuppo:</h3>
-<strong>入围奖项：</strong>
-<ul>
-  <li>最佳游戏 - BIG Festival 2017</li>
-  <li>最佳叙事 - BIG Festival 2017</li>
-  <li>大奖 - BIC Fest 2017</li>
-  <li>最佳游戏设计 - BIC Fest 2017</li>
-  <li>最佳美术 - BIC Fest 2017</li>
-  <li>最佳音效 - BIC Fest 2017</li>
-  <li>最佳游戏设计 - Dutch Game Awards 2017</li>
-  <li>Gamekings 奖（观众选择）- Dutch Game Awards 2017</li>
-</ul>
-
-<strong>官方入选：</strong>
-<ul>
-  <li>Respawn 2017</li>
-  <li>Holland Pavilion Tokyo Game Show 2015</li>
-</ul>
-`
-
-  }
-};
-</script>
-
-
-
-
-
-
-<!-- language -->
-<script>
-let lang = (navigator.language || "en").startsWith("zh") ? "zh" : "en";
-
-function updateText() {
-  document.querySelectorAll("[data-i18n]").forEach(el => {
-    const key = el.dataset.i18n;
-    if (TEXT[lang][key]) {
-      el.innerHTML = TEXT[lang][key];
-    }
-  });
-}
-updateText();
-</script>
-
-<script>
-function switchLang(newLang) {
-  lang = newLang;
-  updateText();
-}
-</script>
+	<script>
+	function switchLang(newLang) {
+	  lang = newLang;
+	  updateText();
+	}
+	</script>
 
 
 
