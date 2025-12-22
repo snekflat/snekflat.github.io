@@ -61,16 +61,16 @@
 	<!-- Wave transition -->
 	<svg width="100%" height="158" viewBox="180 52 920 150" preserveAspectRatio="none" style="display:block">
 	  <defs>
-		<filter id="waveNoise">
+		<filter id="waveNoise" color-interpolation-filters="sRGB">
 		  <feTurbulence
 			type="fractalNoise"
 			baseFrequency="0.01"
-			numOctaves="1"
-			seed="3"
+			numOctaves="2"
+			seed="6"
 		  />
 		  <feDisplacementMap
 			in="SourceGraphic"
-			scale="48"
+			scale="64"
 		  />
 		</filter>
 	  </defs>
@@ -85,7 +85,7 @@
 		  L0 200
 		  Z
 		"
-		fill="#000"
+		fill="#0d1211"
 		filter="url(#waveNoise)"
 	  />
 	</svg>
@@ -115,40 +115,40 @@
 				</div>
 			</div>
 			
-		</BR></BR>
-		<hr/>
-		<!-- Games: Wuppo -->
-		<div class="game-title" data-i18n="game_wuppo"></div>
-		<div class = "game-release">
-			2016, Definitive Edition: 2019
-			</br></br>
-			<iframe width="640" height="360" src="https://www.youtube.com/embed/hhH6dc3xeDA"></iframe>
-			<div class = "game-description" data-i18n="game_wuppo_description"></div>
-			<div class = "game-links">
-				<span data-i18n="available"></span>
-				<a href="http://store.steampowered.com/app/400630/">Steam <img src = "gfx/icon_steam64.png" width="16px"></a>, 
-				<a href="https://www.nintendo.com/games/wuppo-definitive-edition-switch/">Nintendo Switch <img src = "gfx/icon_switch64.png" width="16px"></a>, 
-				<a href="https://www.gog.com/game/wuppo">GOG</a>, 
-				<a href="https://www.microsoft.com/en-us/store/p/wuppo/brbpw76hgkhb">Xbox One</a>, 
-				<a href="https://store.playstation.com/nl-nl/product/EP4541-CUSA08533_00-WUPPOEU000000000?emcid=pa-st-111284">Playstation 4</a>
-				</BR><a href="https://www.indiedb.com/games/wuppo/presskit">Press Kit (Wuppo)</a>
+			</BR></BR>
+			<hr/>
+			<!-- Games: Wuppo -->
+			<div class="game-title" data-i18n="game_wuppo"></div>
+			<div class = "game-release">
+				2016, Definitive Edition: 2019
+				</br></br>
+				<iframe width="640" height="360" src="https://www.youtube.com/embed/hhH6dc3xeDA"></iframe>
+				<div class = "game-description" data-i18n="game_wuppo_description"></div>
+				<div class = "game-links">
+					<span data-i18n="available"></span>
+					<a href="http://store.steampowered.com/app/400630/">Steam <img src = "gfx/icon_steam64.png" width="16px"></a>, 
+					<a href="https://www.nintendo.com/games/wuppo-definitive-edition-switch/">Nintendo Switch <img src = "gfx/icon_switch64.png" width="16px"></a>, 
+					<a href="https://www.gog.com/game/wuppo">GOG</a>, 
+					<a href="https://www.microsoft.com/en-us/store/p/wuppo/brbpw76hgkhb">Xbox One</a>, 
+					<a href="https://store.playstation.com/nl-nl/product/EP4541-CUSA08533_00-WUPPOEU000000000?emcid=pa-st-111284">Playstation 4</a>
+					</BR><a href="https://www.indiedb.com/games/wuppo/presskit">Press Kit (Wuppo)</a>
+				</div>
 			</div>
+			<hr/>
 		</div>
-		<hr/>
-	</div>
-	
 
-<!-- Recognition bla -->
+	<!-- Recognition bla -->
 	</BR></BR></BR>
 	<div class="recognition">
-	<img src="gfx/recognition.png">
-	<span data-i18n="recognition"></span></BR>
-	<hr/>
+		<center><img src="gfx/recognition.png"></center>
+		
+		<span data-i18n="recognition"></span></BR>
+		<hr/>
 	</div>
 	</BR>
 	
 	<div class = "footer">
-	© 2025 snekflat
+		© 2025 snekflat
 	</div>
 	</BR></BR>
 	</div>
@@ -170,9 +170,9 @@
 		game_wuppo_video: '<iframe width="640" height="360"src="https://www.youtube.com/embed/hhH6dc3xeDA"></iframe>',
 		
 		recognition: `
-	<h2>——— Recognition ———</h2>
+	<center><h1>——— Recognition ———</h1></center>
 
-	<h3>Tiny Terry's Turbo Trip:</h3>
+	<h2>Tiny Terry's Turbo Trip:</h2>
 	<a href="https://store.steampowered.com/app/2238040/Tiny_Terrys_Turbo_Trip/">± 95% Overwhelmingly Positive on Steam</a>
 	<strong>Finalist:</strong>
 	<ul>
@@ -188,10 +188,18 @@
 	  <li>London Games Festival 2024</li>
 	  <li>Guerrilla Collective 2024</li>
 	  <li>Cozy Quest 2025</li>
+	  <li>Humble Choice 2025</li>
 	</ul>
 
-	<h3>Wuppo:</h3>
+	<h2>Wuppo:</h2>
 	<a href="https://store.steampowered.com/app/400630/Wuppo_Definitive_Edition/">± 95% Overwhelmingly Positive on Steam</a>
+	
+	<strong>Selected Press:</strong>
+	<ul>
+	<li>
+	<i>"Wuppo, the most overlooked hidden gem on Steam" - </i><a href="https://www.pcgamer.com/this-algorithm-picks-out-steams-best-hidden-gems/">PCGamer</a></li>
+	<li><i>"The Joy of becoming a better person in Wuppo" -</i>  <a href="https://www.rockpapershotgun.com/wuppo-self-improvement">RockPaperShotgun</a></li>
+	</ul>
 	<strong>Finalist:</strong>
 	<ul>
 	  <li>Best Game - BIG Festival 2017</li>
@@ -208,7 +216,11 @@
 	<ul>
 	  <li>Respawn 2017</li>
 	  <li>Holland Pavilion Tokyo Game Show 2015</li>
+	  <li>Humble Monthly #22 (2017)</li>
+	  <li>Humble Overwhelmingly Positive Bundle #2 (2018)</li>
 	</ul>
+	
+	
 
 
 	`
@@ -222,11 +234,11 @@
 		game_tttt: "瞎闹猎车手",
 		game_tttt_video: '<iframe width="640" height="360"src="https://www.youtube.com/embed/THZd3iR770s"></iframe>',
 		game_tttt_description: "特里想开着他的新车飞上太空，干这种胆大不要命的事情，他肯定会成为大家议论的焦点。尽情地开车、跑啊、滑啊，在这段不长的旅途上发现各种东西，跟着特里努力实现他的目标。",
-		game_wuppo: "Wuppo",
+		game_wuppo: "Wuppo (巫泡)",
 		game_wuppo_description: "你是一名被驱逐的“乌姆”，想在这个奇异迷人的世界中寻找一个新的家园。一路上，你会遇到奇怪的生物、谜题、怪物、与政治混乱...",
 		game_wuppo_video: '<iframe width="640" height="360"src="https://www.youtube.com/embed/hhH6dc3xeDA"></iframe>',
 		recognition: `
-	<h2>——— 荣誉 ———</h2>
+	<center><h1>——— 荣誉 ———</h1></center>
 
 	<h3>瞎闹猎车手:</h3>
 	<a href="https://store.steampowered.com/app/2238040/Tiny_Terrys_Turbo_Trip/">± 95% 好评如潮</a>
@@ -246,8 +258,14 @@
 	  <li>Cozy Quest 2025</li>
 	</ul>
 
-	<h3>Wuppo:</h3>
+	<h3>Wuppo (巫泡):</h3>
 	<a href="https://store.steampowered.com/app/400630/Wuppo_Definitive_Edition/">± 95% 好评如潮</a>
+	<strong>新闻报道:</strong>
+	<ul>
+	<li>
+	<i>"Wuppo, the most overlooked hidden gem on Steam" - </i><a href="https://www.pcgamer.com/this-algorithm-picks-out-steams-best-hidden-gems/">PCGamer</a></li>
+	<li><i>"The Joy of becoming a better person in Wuppo" -</i>  <a href="https://www.rockpapershotgun.com/wuppo-self-improvement">RockPaperShotgun</a></li>
+	</ul>
 	<strong>入围奖项：</strong>
 	<ul>
 	  <li>最佳游戏 - BIG Festival 2017</li>
@@ -264,6 +282,8 @@
 	<ul>
 	  <li>Respawn 2017</li>
 	  <li>Holland Pavilion Tokyo Game Show 2015</li>
+	  <li>Humble Monthly #22 (2017)</li>
+	  <li>Humble Overwhelmingly Positive Bundle #2 (2018)</li>
 	</ul>
 	`
 

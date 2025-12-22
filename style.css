@@ -48,7 +48,7 @@ p {
 }
 
 .black_container {
-	background-color: black;
+	background-color: #0d1211;
 	margin-top: -80px;
 	background-origin: content-box;
 	background-clip: content-box;
@@ -137,14 +137,19 @@ sep {
   width: 100%;
   max-width: 640px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   line-height: 1.5;
   padding: 0 20px;
 }
 
-.recognition h2 {
+.recognition h1 {
   font-size: 46px;
+  margin-bottom: 10px;
+}
+
+.recognition h2 {
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
@@ -157,7 +162,7 @@ sep {
 .recognition ul {
   list-style-type: square;
   list-style-position: inside;
-  text-align: center;
+  text-align: left;
   padding-left: 0;
   margin: 5px 0 15px 0;
 }
