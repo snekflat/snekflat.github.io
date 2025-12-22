@@ -8,16 +8,16 @@
   font-size: 16px;
 }
 
-h1 {
-	font-size: 32px;
-	color: rgb(30, 55, 55);
-	
+
+
+h2 {
+	font-size: 46px;
+	color: white;
 	font-family: 'Shippori Antique B1', sans-serif;
 }
 
-
 p {
-	font-size: 18px;
+	font-size: 28px;
 }
 
 
@@ -37,7 +37,7 @@ p {
 	font-family: 'Shippori Antique B1', sans-serif;
 	font-size: 18px;
 	
-	color: #6d7475;
+	color: #414534;
 
 	text-align: center;
 }
@@ -64,7 +64,7 @@ p {
 
 .frame
 {
-	width: 640px;
+	width: 100%;
 	max-width: 640px;
 	margin: 0 auto;
 	text-align: left;
@@ -73,56 +73,37 @@ p {
 
 .game-title{
 	font-family: 'Shippori Antique B1', sans-serif;
-	font-size: 24px;
+	font-size: 28px;
 	color: rgba(250,250,250,255);
 	text-align: center;
 }
 
-.game-links{
-	font-family: 'Shippori Antique B1', sans-serif;
-	font-size: 12px;
-	color: rgba(250,250,250,255);
-	text-align: left;
-}
-
 .game-release{
 	font-family: 'Shippori Antique B1', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	color: rgba(150,150,150,255);
 	padding-bottom: 12px;
 	text-align: center;
 }
 
-
 .game-description{
 	font-family: 'Shippori Antique B1', sans-serif;
-	font-size: 14px;
-	width: 648px;
+	font-size: 18px;
+	width: 100%;
+	max-width: 640px;
+	margin: 0 auto;
 	color: rgba(190,190,195,255);
 	padding-bottom: 12px;
 	text-align: left;
 }
 
-.game_box {
-	width: 250px;
-	height: 500px;
-	background: black;
-	margin: 0;
+.game-links{
 	font-family: 'Shippori Antique B1', sans-serif;
-	font-size: 16px;
-	color: rgba(190,190,195,255);
-	text-align: center;
-	vertical-align: top;
-	display: inline-block;
+	font-size: 18px;
+	color: rgba(250,250,250,255);
+	text-align: left;
 }
 
-
-mini {
-	text-align: right;
-	font-size: 12px;
-	font-family: 'Shippori Antique B1', sans-serif;
-	
-}
 
 .footer {
 	text-align: center;
@@ -151,28 +132,24 @@ sep {
     padding: 0;
 }
 
-#twitfeed {
-	text-align: center;
-	width: 640px;
-}
-
 
 .recognition {
+  width: 100%;
   max-width: 640px;
   margin: 0 auto;
   text-align: center;
-  font-size: 12px;
+  font-size: 18px;
   line-height: 1.5;
   padding: 0 20px;
 }
 
 .recognition h2 {
-  font-size: 24px;
+  font-size: 46px;
   margin-bottom: 10px;
 }
 
 .recognition h3 {
-  font-size: 18px;
+  font-size: 24px;
   margin-top: 15px;
   margin-bottom: 5px;
 }
@@ -204,7 +181,7 @@ sep {
   vertical-align: middle;
   box-sizing: border-box;
 
-  background-color: black;
+  background-color: #876d31;
   color: white;
   border: none;
   padding: 0 10px;
@@ -214,5 +191,5 @@ sep {
 
 
 #lang-switch .lang-btn:hover {
-  background-color: #333; /* slightly lighter black on hover */
+  background-color: black;
 }
