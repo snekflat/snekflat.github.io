@@ -30,7 +30,6 @@ p {
 	  #ffffff 80%
 	);
 
-	animation: wave 5s infinite linear;
 	background-clip: content-box;
 	background-origin: content-box;
 	margin: -8px;
@@ -40,6 +39,17 @@ p {
 	color: #414534;
 
 	text-align: center;
+}
+
+.newsletter {
+    max-width: 480px;
+	font-family: 'Shippori Antique B1', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	color: #414534;
+    margin: 0px auto;
+    background-clip: content-box;
+	background-origin: content-box;
 }
 
 
