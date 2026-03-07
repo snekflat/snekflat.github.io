@@ -84,12 +84,7 @@
                 -->
                 
                 <form id="subscribe-form">
-                  <input 
-                    type="email" 
-                    id="email"
-                    placeholder="Enter your email 6" 
-                    required
-                  >
+                  <input type="email" id="email" placeholder="Enter your email 7" required>
                   <button type="submit">Subscribe</button>
                 </form>
 
@@ -106,7 +101,7 @@
                   message.textContent = "Submitting...";
 
                   try {
-                    const res = await fetch("/api/subscribe", {
+                    const res = await fetch("/api/subscribe", {  // Worker route
                       method: "POST",
                       headers: { "Content-Type": "application/json" },
                       body: JSON.stringify({ email })
@@ -127,13 +122,13 @@
                   }
                 });
                 </script>
-                
-                
-                
-                
-                
-                
-                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
                 
                 
                 
