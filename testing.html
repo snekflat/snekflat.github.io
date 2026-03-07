@@ -87,7 +87,7 @@
                   <input 
                     type="email" 
                     id="email"
-                    placeholder="Enter your email 4" 
+                    placeholder="Enter your email 5" 
                     required
                   >
                   
@@ -107,7 +107,7 @@
                   message.textContent = "Submitting...";
 
                   try {
-                    const res = await fetch("https://www.snekflat.com/api/subscribe", {
+                    const res = await fetch("https://snekflat.com/api/subscribe", {
                       method: "POST",
                       headers: { "Content-Type": "application/json" },
                       body: JSON.stringify({ email })
