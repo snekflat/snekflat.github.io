@@ -68,7 +68,25 @@
             <br><br>
             <div class="newsletter">
                 <b><span data-i18n="newsletter"></span></b><br>
-                <iframe src="https://snekflat.substack.com/embed" width="480" height="150" style="border:0px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+                
+                
+                <div id="substack-form">
+                  <iframe src="https://snekflat.substack.com/embed" width="480" height="150" style="border:0px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+                </div>
+
+                <div id="china-form" style="display:none;">
+                  <form id="subscribe-form" class="china-subscribe">
+                    <input type="email" id="email" placeholder="请输入邮箱地址" required>
+                    <button type="submit">订阅</button>
+                  </form>
+                  <p id="form_debug_message"></p>
+                  <br><br>
+                </div>
+
+                
+                
+                
+                
             </div>
             <br>
             <div class = "noBorder">
@@ -479,8 +497,22 @@
                   el.innerHTML = TEXT["en"][key];
                 }
               });
+              updateNewsletterVisibility();
             }
             updateText();
+            
+            function updateNewsletterVisibility() {
+              const substack = document.getElementById("substack-form");
+              const china = document.getElementById("china-form");
+
+              if (lang === "zh") {
+                substack.style.display = "none";
+                china.style.display = "block";
+              } else {
+                substack.style.display = "block";
+                china.style.display = "none";
+              }
+            }
         </script>
         <script>
             function switchLang(newLang) {
@@ -490,5 +522,41 @@
         </script>
         <!-- Cloudflare Web Analytics -->
 		<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4cfb397c736645ad9f7023ac5c329397"}'></script>
+        
+        
+        <!-- Custom newsletter subscription -->
+        <script>
+            const form = document.getElementById("subscribe-form");
+            const form_debug_message = document.getElementById("form_debug_message");
+
+            form.addEventListener("submit", async (e) => {
+              e.preventDefault();
+
+              const email = document.getElementById("email").value;
+              form_debug_message.textContent = "提交中...";
+
+              try {
+                const res = await fetch("/api/subscribe", {  // Worker route
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({ email })
+                });
+
+                const data = await res.json();
+
+                if (data.success) {
+                  form_debug_message.textContent = "✅ 感谢订阅！你已成功加入邮件列表。";
+                  form.reset();
+                } else {
+                  form_debug_message.textContent = "❌ Error (错误): " + (data.error || "");
+                }
+
+              } catch (err) {
+                form_debug_message.textContent = "⚠️ Error (错误)";
+                console.error(err);
+              }
+            });
+        </script>
+  
     </body>
 </html>
