@@ -87,13 +87,11 @@
                   <input 
                     type="email" 
                     id="email"
-                    placeholder="Enter your email 3" 
+                    placeholder="Enter your email 4" 
                     required
                   >
                   
-                  <button type="submit">
-                    Subscribe
-                  </button>
+                  <button type="submit">Subscribe</button>
                 </form>
 
                 <p id="message"></p>
@@ -103,36 +101,33 @@
                 const message = document.getElementById("message");
 
                 form.addEventListener("submit", async (e) => {
-
                   e.preventDefault();
 
                   const email = document.getElementById("email").value;
-
                   message.textContent = "Submitting...";
 
                   try {
-
-                    const res = await fetch("https://snekflat.com/api/subscribe", {
+                    const res = await fetch("https://www.snekflat.com/api/subscribe", {
                       method: "POST",
                       headers: { "Content-Type": "application/json" },
                       body: JSON.stringify({ email })
-                    }).then(r => r.json()).then(console.log);
+                    });
 
-                    if (res.ok) {
-                      message.textContent = "Thanks! You're on the list.";
+                    const data = await res.json(); // parse JSON
+
+                    if (data.success) {
+                      message.textContent = "✅ OK! :D";
                       form.reset();
                     } else {
-                      message.textContent = "Subscription failed :(";
+                      message.textContent = "❌ Failed :( " + (data.error || "");
                     }
 
                   } catch (err) {
-                    message.textContent = "Network error.";
+                    message.textContent = "⚠️ Network error.";
                     console.error(err);
                   }
-
                 });
                 </script>
-                                
                 
                 
                 
