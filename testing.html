@@ -87,7 +87,7 @@
                   <input 
                     type="email" 
                     id="email"
-                    placeholder="Enter your email 2" 
+                    placeholder="Enter your email 3" 
                     required
                   >
                   
@@ -116,13 +116,13 @@
                       method: "POST",
                       headers: { "Content-Type": "application/json" },
                       body: JSON.stringify({ email })
-                    });
+                    }).then(r => r.json()).then(console.log);
 
                     if (res.ok) {
                       message.textContent = "Thanks! You're on the list.";
                       form.reset();
                     } else {
-                      message.textContent = "Subscription failed.";
+                      message.textContent = "Subscription failed :(";
                     }
 
                   } catch (err) {
