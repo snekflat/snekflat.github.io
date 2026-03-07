@@ -87,10 +87,9 @@
                   <input 
                     type="email" 
                     id="email"
-                    placeholder="Enter your email 5" 
+                    placeholder="Enter your email 6" 
                     required
                   >
-                  
                   <button type="submit">Subscribe</button>
                 </form>
 
@@ -107,19 +106,19 @@
                   message.textContent = "Submitting...";
 
                   try {
-                    const res = await fetch("https://snekflat.com/api/subscribe", {
+                    const res = await fetch("/api/subscribe", {
                       method: "POST",
                       headers: { "Content-Type": "application/json" },
                       body: JSON.stringify({ email })
                     });
 
-                    const data = await res.json(); // parse JSON
+                    const data = await res.json();
 
                     if (data.success) {
-                      message.textContent = "✅ OK! :D";
+                      message.textContent = "✅ Thanks! You're on the list!";
                       form.reset();
                     } else {
-                      message.textContent = "❌ Failed :( " + (data.error || "");
+                      message.textContent = "❌ Failed: " + (data.error || "");
                     }
 
                   } catch (err) {
